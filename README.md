@@ -123,6 +123,7 @@ Indicadores económicos de coyuntura > Producto interno bruto trimestral, base 2
 - **Desestacionalización.** INEGI usa el paquete X-13ARIMA-SEATS y ajusta dos efectos de calendario: la frecuencia de los días de la semana y la Semana Santa (INEGI, 2018, apartado 2.2.2).
 - **Identificación de contracciones.** Se identifican a simple vista en la gráfica, con el mismo criterio para ambas series. Cada periodo se delimita del pico al valle: el pico es el trimestre de mayor PIB antes de la caída y el valle es el de menor PIB del episodio. Se consideran dos tipos de caídas: las que se encadenan durante varios trimestres seguidos (más de tres) y las muy marcadas aunque duren menos, como las de 1994 y 2020. No se usa una definición formal de recesión.
 - **Redondeo.** Las tasas se redondean a un decimal.
+- **Contraste con INEGI.** Los resultados trimestrales se contrastaron con las variaciones que publica INEGI.
 
 ## Estructura del proyecto
 
@@ -145,7 +146,9 @@ pib_mexico/
 └── requirements.txt
 ```
 
-## Tecnologías
+## Requisitos y ejecución
+
+El análisis se desarrolla en un Jupyter Notebook, que se ejecuta desde Visual Studio Code con la extensión de Jupyter.
 
 | Herramienta | Versión |
 |---|---|
@@ -155,44 +158,29 @@ pib_mexico/
 | matplotlib | 3.11.2 |
 | ipykernel | Última disponible |
 
-El análisis se desarrolla en un Jupyter Notebook, que se ejecuta desde Visual Studio Code con la extensión de Jupyter.
-
-## Cómo ejecutar el proyecto
-
 1. Clona el repositorio y entra a la carpeta:
 
-   ```bash
+```bash
    git clone https://github.com/Jose-Castanedas/pib_mexico.git
    cd pib_mexico
-   ```
+```
 
 2. Crea y activa un entorno virtual:
 
-   ```bash
+```bash
    python -m venv .venv
    source .venv/bin/activate      # En Windows: .venv\Scripts\activate
-   ```
+```
 
 3. Instala las dependencias:
 
-   ```bash
+```bash
    pip install -r requirements.txt
-   ```
+```
 
 4. Abre `notebooks/analisis_pib.ipynb` en Visual Studio Code, selecciona el kernel del entorno `.venv` y ejecuta todas las celdas.
 
 El notebook lee los datos con rutas relativas (`../data/`) y guarda las gráficas en `../figures/`, por lo que debe ejecutarse desde la carpeta `notebooks/`. Visual Studio Code lo hace así por defecto. El proyecto se desarrolló con Python 3.14.2 y no se probó con otras versiones.
-
-## Proceso y aprendizajes
-
-El análisis sigue seis pasos: descargar las dos series del BIE, cargarlas y revisarlas, responder las tres preguntas de la serie original, responder las cuatro de la serie desestacionalizada, comparar los resultados entre series y redactar las conclusiones.
-
-Algunas decisiones y aprendizajes del proceso:
-
-- La serie original no permite comparar un trimestre con el anterior, porque la estacionalidad distorsiona el cambio. Por eso la variación trimestral usa solo la serie desestacionalizada.
-- Anualizar la serie desestacionalizada con el mismo método que la original sirve como validación cruzada de los cálculos.
-- Calcular la variación sobre toda la serie y filtrar después evita perder el primer valor del periodo analizado.
-- Contrastar los resultados con las cifras publicadas por INEGI ayuda a detectar problemas de redondeo, como el del 2T-2025.
 
 ## Limitaciones
 
