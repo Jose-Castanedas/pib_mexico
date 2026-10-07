@@ -82,7 +82,7 @@ Las dos series arrojan crecimientos anuales similares, como se espera: al promed
 **No incluye**
 
 - Análisis econométrico ni pronósticos.
-- Análisis causal de las crisis. El notebook menciona las causas históricas solo como contexto, no como resultado del análisis.
+- Análisis causal de las crisis. El notebook y este README resumen el contexto histórico que mencionan notas periodísticas, solo como referencia, no como resultado del análisis.
 - Comparaciones internacionales.
 
 ## Fuente de los datos
@@ -121,7 +121,7 @@ Indicadores económicos de coyuntura > Producto interno bruto trimestral, base 2
 - **Desestacionalización.** INEGI usa el paquete X-13ARIMA-SEATS y ajusta dos efectos de calendario: la frecuencia de los días de la semana y la Semana Santa (INEGI, 2018, apartado 2.2.2).
 - **Identificación de contracciones.** Se identifican a simple vista en la gráfica, con el mismo criterio para ambas series. Cada periodo se delimita del pico al valle: el pico es el trimestre de mayor PIB antes de la caída y el valle es el de menor PIB del episodio. Se consideran dos tipos de caídas: las que se encadenan durante varios trimestres seguidos (más de tres) y las muy marcadas aunque duren menos, como las de 1994 y 2020. No se usa una definición formal de recesión.
 - **Redondeo.** Las tasas se redondean a un decimal.
-- **Contraste con INEGI.** Los resultados trimestrales se contrastaron con las variaciones que publica INEGI.
+- **Contraste con INEGI.** Las variaciones trimestrales de la serie desestacionalizada (los últimos 10 trimestres, 1T-2024 a 2T-2026, incluido el 1.4% del 2T-2026) se contrastaron con las que publica INEGI, y coinciden. La variación anual del 2T-2026 con la serie desestacionalizada (1.9%) es la cifra publicada por INEGI y se cita como referencia; no se calculó en este proyecto.
 
 ## Estructura del proyecto
 
@@ -182,9 +182,11 @@ El notebook lee los datos con rutas relativas (`../data/`) y guarda las gráfica
 
 ## Limitaciones
 
-- La identificación de contracciones es visual y no sigue una definición formal.
+- Las contracciones se identifican a simple vista, del pico al valle, sin una definición formal de recesión. Otra persona podría delimitarlas con fechas distintas. Esto también limita la lectura de las diferencias de hasta dos trimestres entre las dos series: pueden deberse a la estacionalidad o al método visual, y este análisis no permite separarlas.
 - Los datos desestacionalizados de 1993 a 2026 son preliminares y INEGI puede revisarlos.
-- Las explicaciones de las crisis son contexto histórico, no hallazgos del análisis.
+- El contexto histórico de cada contracción proviene de notas periodísticas (una de ellas, una columna de opinión), no de fuentes académicas o institucionales, y no es un hallazgo del análisis.
+- Las variaciones trimestrales se contrastaron con las publicadas por INEGI; las tasas de crecimiento anual de 2021-2025 y la variación interanual de la serie original (2.1%) no se contrastaron con cifras publicadas.
+- Las diferencias entre las tasas anuales de ambas series (hasta 0.3 p.p.) pueden deberse a los efectos de calendario o a las revisiones de INEGI; este análisis no distingue entre ambas.
 
 ## Mejoras futuras
 
