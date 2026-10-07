@@ -190,10 +190,9 @@ El notebook lee los datos con rutas relativas (`../data/`) y guarda las gráfica
 
 ## Mejoras futuras
 
+- Definir un criterio formal para identificar las contracciones y aplicarlo a ambas series.
+- Contrastar las tasas de crecimiento anual con las que publica INEGI.
 - Refactorizar el código para eliminar la repetición en las funciones de cálculo y en la creación de gráficas.
-- Calcular el crecimiento promedio del PIB por décadas, para complementar la lectura de largo plazo.
-- Analizar el significado económico del estancamiento de 2024-2025.
-- Definir un criterio formal para identificar las contracciones.
 
 ## Referencias
 
