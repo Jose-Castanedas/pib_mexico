@@ -18,8 +18,6 @@ Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y
 
 ## Preguntas que responde
 
-## Preguntas que responde
-
 **Serie original**
 
 1. ¿Cómo ha evolucionado el PIB?
