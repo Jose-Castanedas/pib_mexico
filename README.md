@@ -33,7 +33,7 @@ Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y
 
 ## Resultados principales
 
-- El PIB muestra una tendencia creciente de largo plazo, con seis contracciones identificadas a simple vista, cada una delimitada del pico al valle. Cinco se observan en la serie original; la sexta, de 1985 a 1986, también se aprecia en la serie original, pero es más fácil de delimitar en la serie desestacionalizada. En 2022 el PIB regresa a niveles similares a los prepandemia.
+- El PIB muestra una tendencia creciente de largo plazo, con seis contracciones identificadas a simple vista, cada una delimitada del pico al valle. Cinco se delimitan en ambas series; la sexta, de 1985 a 1986, solo se pudo delimitar en la serie desestacionalizada, aunque el descenso también se aprecia en la original. En 2022 el PIB regresa a niveles similares a los prepandemia.
 
 ![Evolución del PIB trimestral de México, 1T-1980 a 2T-2026](figures/grafica_01_evolucion_pib.png)
 
@@ -80,7 +80,7 @@ Las dos series arrojan crecimientos anuales similares, como se espera: al promed
 **No incluye**
 
 - Análisis econométrico ni pronósticos.
-- Análisis causal de las crisis. El notebook y este README resumen el contexto histórico que mencionan notas periodísticas, solo como referencia, no como resultado del análisis.
+- Análisis causal de las crisis. El notebook resume el contexto histórico que mencionan las notas periodísticas, solo como referencia, no como resultado del análisis; este README solo nombra los episodios.
 - Comparaciones internacionales.
 
 ## Fuente de los datos
@@ -117,7 +117,7 @@ Indicadores económicos de coyuntura > Producto interno bruto trimestral, base 2
 - **PIB anual y su crecimiento.** El PIB anual es el promedio simple de los cuatro trimestres del año (Heath, 2012, cap. 4, apartado 4.8, p. 72), y se obtiene igual para ambas series. El crecimiento anual es la variación porcentual entre promedios anuales consecutivos. El cálculo parte de 2020, por lo que las tasas corresponden a 2021-2025.
 - **Crecimiento trimestral.** Compara cada trimestre con el inmediato anterior (t contra t-1). Este cálculo solo es válido con la serie desestacionalizada. El notebook calcula la variación sobre toda la serie y filtra después, para que el 1T-2024 tenga como base el 4T-2023.
 - **Desestacionalización.** INEGI usa el paquete X-13ARIMA-SEATS y ajusta dos efectos de calendario: la frecuencia de los días de la semana y la Semana Santa (INEGI, 2018, apartado 2.2.2).
-- **Identificación de contracciones.** Se identifican a simple vista en la gráfica, con el mismo criterio para ambas series. Cada periodo se delimita del pico al valle: el pico es el trimestre de mayor PIB antes de la caída y el valle es el de menor PIB del episodio. Se consideran dos tipos de caídas: las que se encadenan durante varios trimestres seguidos (más de tres) y las muy marcadas aunque duren menos, como las de 1994 y 2020. No se usa una definición formal de recesión.
+- **Identificación de contracciones.** Se identifican a simple vista en la gráfica, con el mismo criterio para ambas series. Cada periodo se delimita del pico al valle: el pico es el trimestre de mayor PIB antes de la caída y el valle es el de menor PIB del episodio. Se consideran las caídas de tres o más trimestres consecutivos y, como excepción, las muy marcadas aunque duren menos: el "Efecto Tequila" (dos trimestres de caída) y, en la serie original, la de 2020 (dos trimestres de caída). No se usa una definición formal de recesión.
 - **Redondeo.** Las tasas se redondean a un decimal.
 - **Contraste con INEGI.** Las variaciones trimestrales de la serie desestacionalizada (los últimos 10 trimestres, 1T-2024 a 2T-2026, incluido el 1.4% del 2T-2026) se contrastaron con las que publica INEGI, y coinciden. La variación anual del 2T-2026 con la serie desestacionalizada (1.9%) es la cifra publicada por INEGI y se cita como referencia; no se calculó en este proyecto.
 
