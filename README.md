@@ -195,6 +195,8 @@ Algunas decisiones y aprendizajes del proceso:
 - Heath, J. (2012). *Lo que indican los indicadores: cómo utilizar la información estadística para entender la realidad económica de México*. Instituto Nacional de Estadística y Geografía (INEGI).
 - Instituto Nacional de Estadística y Geografía. (2018). *Metodología del ajuste estacional 2017*. INEGI.
 - Instituto Nacional de Estadística y Geografía. (s. f.). *Banco de Información Económica (BIE): indicadores económicos de coyuntura* [Base de datos]. <https://www.inegi.org.mx/app/indicadores/?tm=3>
+- Expansión. (2023, 30 de septiembre). *Estas son las peores crisis económicas de México*. Expansión. https://expansion.mx/mercados/2023/09/30/peores-crisis-economicas-de-mexico
+- Sandoval, A. (2024, 13 de noviembre). *Historia de las recesiones y crisis económicas en México: de 1981 a 2020*. Alto Nivel. https://www.altonivel.com.mx/historia-de-las-recesiones-y-crisis-economicas-en-mexico-de-1981-a-2020/
 
 ## Autoría y licencia
 
