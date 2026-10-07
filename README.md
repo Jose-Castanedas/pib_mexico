@@ -1,6 +1,6 @@
 # Análisis descriptivo del crecimiento del Producto Interno Bruto mexicano
 
-Este proyecto presenta un análisis descriptivo de la evolución del PIB trimestral de México a precios constantes de 2018, con las series original y desestacionalizada que publica INEGI. Responde siete preguntas sobre el comportamiento del PIB mediante visualizaciones y el cálculo de tasas de crecimiento. No es un análisis econométrico ni de pronóstico.
+Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y el 2T-2026, a partir del PIB trimestral a precios constantes de 2018 que publica INEGI, y qué cambia al leerlo con la serie original o con la desestacionalizada. Es un análisis descriptivo: calcula tasas de crecimiento y las muestra en gráficas. No estima modelos, no pronostica y no establece causas.
 
 ## Contenido
 
@@ -20,6 +20,8 @@ Este proyecto presenta un análisis descriptivo de la evolución del PIB trimest
 
 ## Preguntas que responde
 
+## Preguntas que responde
+
 **Serie original**
 
 1. ¿Cómo ha evolucionado el PIB?
@@ -28,21 +30,34 @@ Este proyecto presenta un análisis descriptivo de la evolución del PIB trimest
 
 **Serie desestacionalizada**
 
-1. ¿Cómo se compara la serie original con la serie desestacionalizada?
-2. ¿Cómo se comparan los crecimientos anuales de ambas series?
-3. ¿Cuánto ha crecido el PIB en el último trimestre respecto al trimestre anterior (2T-2026 contra 1T-2026)?
-4. ¿Cómo ha sido el crecimiento del PIB en los últimos 10 trimestres (1T-2024 a 2T-2026)?
+4. ¿Cómo se compara la serie original con la serie desestacionalizada?
+5. ¿Cómo se comparan los crecimientos anuales de ambas series?
+6. ¿Cuánto ha crecido el PIB en el último trimestre respecto al trimestre anterior (2T-2026 contra 1T-2026)?
+7. ¿Cómo ha sido el crecimiento del PIB en los últimos 10 trimestres (1T-2024 a 2T-2026)?
 
 ## Resultados principales
 
-- El PIB muestra una tendencia creciente de largo plazo, con cinco contracciones relevantes en la serie original: la crisis de la deuda externa (1981-1983), el Efecto Tequila (1994-1995), la crisis "dot com" (2001-2002), la crisis financiera global (2008-2009) y la pandemia de COVID-19 (2019-2020). En 2022 el PIB regresa a niveles similares a los prepandemia.
-- La serie desestacionalizada confirma esas cinco contracciones y revela una sexta, de 1985 a 1986, que las oscilaciones estacionales enmascaran en la serie original.
-- En el 2T-2026, el PIB crece 2.1% respecto al 2T-2025 (serie original).
-- El crecimiento anual se desacelera de 2021 a 2025: un fuerte repunte en 2021, un crecimiento moderado en 2022 y 2023, y un crecimiento bajo en 2024 y 2025.
-- En el 2T-2026, el PIB desestacionalizado crece 1.4% respecto al 1T-2026, el mayor avance de los últimos 10 trimestres.
-- Los últimos 10 trimestres alternan entre alzas y bajas pequeñas, y ninguna tendencia se sostiene por más de un trimestre.
+- El PIB muestra una tendencia creciente de largo plazo, con seis contracciones identificadas a simple vista, cada una delimitada del pico al valle. Cinco se observan en la serie original; la sexta, de 1985 a 1986, también se aprecia en la serie original, pero es más fácil de delimitar en la serie desestacionalizada. En 2022 el PIB regresa a niveles similares a los prepandemia.
 
-Crecimiento anual del PIB (%), con 2020 como año base:
+![Evolución del PIB trimestral de México, 1T-1980 a 2T-2026](figures/grafica_01_evolucion_pib.png)
+
+| Contracción | Serie original | Serie desestacionalizada |
+|---|:---:|:---:|
+| Crisis de la deuda externa | 4T-1981 a 3T-1983 | 2T-1982 a 2T-1983 |
+| "Efecto Tequila" | 4T-1994 a 2T-1995 | 4T-1994 a 2T-1995 |
+| Crisis "dot com" | 2T-2001 a 1T-2002 | 1T-2001 a 1T-2002 |
+| Crisis financiera global | 2T-2008 a 1T-2009 | 3T-2008 a 2T-2009 |
+| Caída previa y pandemia de COVID-19 | 4T-2019 a 2T-2020 | 3T-2019 a 2T-2020 |
+| Contracción de 1985-1986 | Descenso visible, difícil de delimitar | 3T-1985 a 4T-1986 |
+
+Los periodos se delimitan a simple vista, del pico al valle, sin una definición formal de recesión. Los nombres de cada episodio son el contexto histórico que mencionan las notas periodísticas consultadas (Expansión, 2023; Sandoval, 2024; Casillas, 2022); este análisis describe cuándo cae el PIB, no por qué.
+
+- En el 2T-2026, el PIB crece 2.1% respecto al 2T-2025 (serie original).
+- El crecimiento anual se desacelera de 2021 a 2025: un fuerte repunte en 2021, que refleja en parte la base baja de 2020, un crecimiento moderado en 2022 y 2023, y un crecimiento bajo en 2024 y 2025.
+- En el 2T-2026, el PIB desestacionalizado crece 1.4% respecto al 1T-2026, el mayor avance de los últimos 10 trimestres (datos preliminares).
+- Los últimos 10 trimestres alternan entre alzas y bajas pequeñas. La excepción es el 2T y el 3T de 2025, con variaciones de 0.0% y -0.1%.
+
+Crecimiento anual del PIB (%), 2021-2025 (el cálculo parte de 2020):
 
 | Año | Serie original | Serie desestacionalizada | Diferencia (p.p.) |
 |-----|:--------------:|:------------------------:|:-----------------:|
@@ -52,9 +67,11 @@ Crecimiento anual del PIB (%), con 2020 como año base:
 | 2024 | 1.5 | 1.2 | -0.3 |
 | 2025 | 0.5 | 0.7 | 0.2 |
 
-Las dos series arrojan crecimientos anuales muy similares, como se espera: al promediar los cuatro trimestres de cada año, el efecto estacional tiende a cancelarse.
+![Crecimiento anual del PIB: serie original y serie desestacionalizada, 2021-2025](figures/grafica_04_comparacion_crecimiento_anual_series.png)
 
-> Nota: INEGI publica para el 2T-2026 una variación anual de 1.9% en la serie desestacionalizada. Este proyecto calcula la variación interanual solo con la serie original (2.1%).
+Las dos series arrojan crecimientos anuales similares, como se espera: al promediar los cuatro trimestres de cada año, el efecto estacional tiende a cancelarse. Las diferencias de hasta 0.3 p.p. pueden deberse a los efectos de calendario y a las revisiones de INEGI; este análisis no permite separar una causa de la otra.
+
+> Nota: INEGI publica para el 2T-2026 una variación anual de 1.9% con la serie desestacionalizada. Este proyecto calcula la variación interanual solo con la serie original (2.1%). Son series distintas, por lo que las cifras no son directamente comparables.
 
 ## Alcance
 
