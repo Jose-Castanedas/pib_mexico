@@ -156,23 +156,23 @@ El análisis se desarrolla en un Jupyter Notebook, que se ejecuta desde Visual S
 
 1. Clona el repositorio y entra a la carpeta:
 
-```bash
+   ```bash
    git clone https://github.com/Jose-Castanedas/pib_mexico.git
    cd pib_mexico
-```
+   ```
 
 2. Crea y activa un entorno virtual:
 
-```bash
+   ```bash
    python -m venv .venv
    source .venv/bin/activate      # En Windows: .venv\Scripts\activate
-```
+   ```
 
 3. Instala las dependencias:
 
-```bash
+   ```bash
    pip install -r requirements.txt
-```
+   ```
 
 4. Abre `notebooks/analisis_pib.ipynb` en Visual Studio Code, selecciona el kernel del entorno `.venv` y ejecuta todas las celdas.
 
