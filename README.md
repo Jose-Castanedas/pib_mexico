@@ -148,9 +148,9 @@ El análisis se desarrolla en un Jupyter Notebook, que se ejecuta desde Visual S
 
 | Herramienta | Versión |
 |---|---|
-| Python | 3.14.2 |
+| Python | 3.15.1 |
 | pandas | 3.0.6 |
-| numpy | 2.5.3 |
+| numpy | 2.5.4 |
 | matplotlib | 3.11.2 |
 | ipykernel | Última disponible |
 
@@ -176,7 +176,7 @@ El análisis se desarrolla en un Jupyter Notebook, que se ejecuta desde Visual S
 
 4. Abre `notebooks/analisis_pib.ipynb` en Visual Studio Code, selecciona el kernel del entorno `.venv` y ejecuta todas las celdas.
 
-El notebook lee los datos con rutas relativas (`../data/`) y guarda las gráficas en `../figures/`, por lo que debe ejecutarse desde la carpeta `notebooks/`. Visual Studio Code lo hace así por defecto. El proyecto se desarrolló con Python 3.14.2 y no se probó con otras versiones.
+El notebook lee los datos con rutas relativas (`../data/`) y guarda las gráficas en `../figures/`, por lo que debe ejecutarse desde la carpeta `notebooks/`. Visual Studio Code lo hace así por defecto. El proyecto se desarrolló con Python 3.14.2 y se ejecutó de nuevo sin errores con Python 3.15.1 y numpy 2.5.4; no se probó con otras versiones.
 
 ## Limitaciones
 
