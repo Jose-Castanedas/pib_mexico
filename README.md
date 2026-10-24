@@ -2,6 +2,8 @@
 
 Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y el 2T-2026, a partir del PIB trimestral a precios constantes de 2018 que publica INEGI, y qué cambia al leerlo con la serie original o con la desestacionalizada. Es un análisis descriptivo: calcula tasas de crecimiento y las muestra en gráficas. No estima modelos, no pronostica y no establece causas.
 
+El análisis completo está en el notebook; este README es un resumen.
+
 ## Contenido
 
 - [Preguntas que responde](#preguntas-que-responde)
