@@ -4,8 +4,20 @@ Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y
 
 El análisis completo está en el notebook; este README es un resumen.
 
+---
+
+## Abstract (English)
+
+This project describes how Mexico's GDP changed from Q1 1980 to Q2 2026. It is a descriptive analysis: it has no models, forecasts or causes. I used quarterly GDP at constant 2018 prices from INEGI, in two versions: original and seasonally adjusted. I used Python (pandas and matplotlib) to calculate growth rates and make charts. I calculated annual GDP as the average of the four quarters of each year.
+
+I identified six contractions by visual inspection: five in both series and one only in the seasonally adjusted series. Annual growth slowed from 6.0% in 2021 to 0.5% in 2025. The 2021 rate is high partly because 2020 was low. Both series give similar annual growth (differences up to 0.3 percentage points). In Q2 2026, GDP grew 2.1% compared with Q2 2025 (original series). Seasonally adjusted GDP grew 1.4% compared with Q1 2026, the highest quarterly growth in the last ten quarters (preliminary data).
+
+Limitation: I identified the contractions by eye, so another person could choose different dates.
+---
+
 ## Contenido
 
+- [Abstract (English)](#abstract-english)
 - [Preguntas que responde](#preguntas-que-responde)
 - [Resultados principales](#resultados-principales)
 - [Alcance](#alcance)
