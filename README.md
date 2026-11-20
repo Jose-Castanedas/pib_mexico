@@ -4,7 +4,7 @@ Este proyecto describe cómo ha crecido la economía mexicana entre el 1T-1980 y
 
 El análisis completo está en el notebook; este README es un resumen.
 
-## Abstract (English)
+## Abstract
 
 This project describes how Mexico's GDP changed from Q1 1980 to Q2 2026. It is a descriptive analysis: it has no models, forecasts or causes. I used quarterly GDP at constant 2018 prices from INEGI, in two versions: original and seasonally adjusted. I used Python (pandas and matplotlib) to calculate growth rates and make charts. I calculated annual GDP as the average of the four quarters of each year.
 
@@ -14,7 +14,7 @@ Limitation: I identified the contractions by eye, so another person could choose
 
 ## Contenido
 
-- [Abstract (English)](#abstract-english)
+- [Abstract](#abstract)
 - [Preguntas que responde](#preguntas-que-responde)
 - [Resultados principales](#resultados-principales)
 - [Alcance](#alcance)
